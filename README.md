@@ -1,4 +1,6 @@
-
+Busy
+<br>
+Studying..
 
 <!---
 SnehalSalve/SnehalSalve is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
