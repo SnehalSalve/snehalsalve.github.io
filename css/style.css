@@ -1,0 +1,323 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #0078d4;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+/* Menu Icon Styles */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+/* Add styles for the active menu icon (cross) */
+.menu-icon.active .bar:nth-child(1) {
+  transform: translateY(11px) rotate(45deg);
+}
+
+.menu-icon.active .bar:nth-child(2) {
+  opacity: 0;
+  transform: scale(0.1);
+}
+
+.menu-icon.active .bar:nth-child(3) {
+  transform: translateY(-11px) rotate(-45deg);
+}
+
+/* Hamburger */
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+/* Add transitions for smoother icon animation */
+.menu-icon .bar {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar {
+  background-color: #0078d4;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  overflow: hidden;
+  height: auto;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Project Card Styles */
+#projects {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-basis: calc(33.3333% - 20px);
+  text-align: center;
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.project-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #0078d4;
+}
+
+.project-card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.project-card a {
+  display: inline-block;
+  background-color: #0078d4;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* LinkedIn Profile Section Styles */
+#linkedin {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.profile-details p {
+  font-size: 16px;
+  color: #333;
+}
+
+.linkedin-btn {
+  display: inline-block;
+  background-color: #0078d4;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/* Contact Section Styles */
+#contact {
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #0078d4;
+}
+
+#contact p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .qr-code {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.separator {
+  border-left: 2px solid #ccc;
+  height: 200px;
+  margin: 0 20px;
+}
+
+.contact-details {
+  text-align: center;
+}
+
+#contact .send-email a {
+  display: inline-block;
+  background-color: #0078d4;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+  }
+
+  .navbar {
+    padding: 20px 0;
+    height: 0;
+    transition: height 0.3s ease-in-out;
+    overflow: hidden;
+  }
+
+  .navbar.active {
+    height: 300px;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+    display: block;
+    padding: 10px 0;
+    position: relative;
+  }
+
+  .navbar a {
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .navbar li::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar li:hover::before {
+    transform: scaleX(1);
+    transform-origin: 0 50%;
+  }
+
+  .navbar li:hover a {
+    background-color: #005aaa;
+  }
+
+  .project-card {
+    flex-basis: calc(50% - 20px);
+  }
+
+  .separator {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  #contact h2 {
+    font-size: 22px;
+  }
+
+  #contact p {
+    font-size: 14px;
+  }
+}
