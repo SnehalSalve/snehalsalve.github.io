@@ -1,133 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Snehal Salve | Portfolio</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Font Awesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <h1>Snehal Salve</h1>
-        <p>Frontend Developer & UI/UX Designer</p>
-        <div class="menu-icon" id="menu-icon">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-      </div>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <nav class="navbar">
-      <div class="container">
-        <ul>
-          <li>
-            <a href="#projects"
-              ><i class="fas fa-project-diagram"></i> Projects</a
-            >
-          </li>
-          <li>
-            <a href="#linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
-          </li>
-          <li>
-            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-    <section id="projects">
-      <div class="container">
-        <div class="project-card">
-          <img src="images/project-1.jpg" alt="Project 1" />
-          <h2>Food Delivery Web Design</h2>
-          <p>
-            In this solo Figma project, I've created a visually appealing and static food delivery web design prototype. Prioritizing user experience, I've crafted intuitive navigation, compelling visuals, and a responsive layout for various devices. This prototype serves as a visual representation of a user-friendly online food ordering experience, highlighting the fusion of design and technology for a seamless interface.
-          </p>
-          <a href="https://www.figma.com/proto/4tJs5PzLdRtLaClcQl2Fgn?node-id=0-1&mode=design&t=1sQuLdYvIeZw8fW9-6" target="_blank">View Project</a>
-        </div>
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        <div class="project-card">
-          <img src="images/project-2.jpg" alt="Project 2" />
-          <h2>To Do Mobile App Design</h2>
-          <p>
-            In this individual project, I've meticulously designed a static To-Do mobile app interface that emphasizes simplicity and user-friendliness. The intuitive layout, clean aesthetics, and responsive design cater to seamless task management across mobile devices. This project showcases my design skills in creating an efficient and visually appealing mobile app, offering users a straightforward and organized platform for their daily tasks.
-          </p>
-          <a href="https://www.figma.com/file/kJHg9QYN1REu6PJmCp0tHc/To-Do?type=design&node-id=0%3A1&mode=design&t=yrOurkMTugFNMdfz-1" target="_blank">View Project</a>
-        </div>
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">SS</a>
+                </div>
 
-        <div class="project-card">
-          <img src="images/project-3.jpg" alt="Project 3" />
-          <h2>Hangout Mobile App Design</h2>
-          <p>
-            In this self-designed project, I've created a static Hangout mobile app interface that prioritizes user engagement and effortless social connection. With a clean and visually appealing design, I've crafted intuitive navigation, profile management, and chat features to provide a user-friendly experience for making plans, connecting with friends, and sharing moments. This project highlights my design proficiency in delivering an inviting and functional social networking app for seamless communication and event coordination.
-          </p>
-          <a href="https://www.figma.com/file/owBrWYBphL1tdfD8921CF0/Hangout?type=design&node-id=0%3A1&mode=design&t=WTwgDYqE3JpBejsn-1" target="_blank">View Project</a>
-        </div>
-      </div>
-    </section>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
-    <section id="linkedin">
-      <div class="container">
-        <div class="profile-picture">
-          <img src="images/linkedin-profile.jpeg" alt="LinkedIn Profile Photo" />
-        </div>
-        <div class="profile-details">
-          <p>
-            <ul type="none">
-              <li>Enthusiastic UI/UX Designer and Frontend Developer, fresh graduate.</li>
-              <li>Strong foundation in design principles and coding skills.</li>
-              <li>Committed to delivering exceptional user experiences and polished web interfaces.</li>
-              <li>Goal-oriented with a focus on transforming ideas into visually appealing and functional digital products, eager to collaborate with cross-functional teams.</li>
-            </ul>
-          </p>
-          <a
-            href="https://www.linkedin.com/in/snehalsalve/"
-            target="_blank"
-            class="linkedin-btn"
-            >View Profile</a
-          >
-        </div>
-      </div>
-    </section>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-    <section id="contact">
-      <div class="container">
-        <h2>Contact Me</h2>
-        <div class="contact-content">
-          <div class="qr-code">
-            <!-- You can generate a QR code for your email using an online QR code generator -->
-            <img src="images/qr-code.jpg" alt="QR Code" />
-          </div>
-          <div class="separator"></div>
-          <div class="contact-details">
-            <p>
-              If you'd like to get in touch or have any inquiries, please don't
-              hesitate to reach out via email.
-            </p>
-            <!-- Send Email Button as a hyperlink -->
-            <div class="send-email">
-              <a href="mailto:snehalsal20@gmail.com">Send Email</a>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Snehal Salve</span><br> Web Designer</h1>
+
+                    <a href="#" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="www.linkedin.com/in/snehalsalve" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                    <a href="https://github.com/SnehalSalve" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="/assets/img/profil.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="/assets/img/p2.jpeg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Snehal</h2>
+                        <p class="about__text">a versatile designer and developer passionate about creating exceptional digital experiences. With a keen eye for design and a knack for coding, I bring creativity and technical expertise to every project I undertake.
+                            <br>
+                            Design Lover: I enjoy crafting captivating visuals using tools like Figma, Canva, and Photoshop, as well as building intuitive websites in WordPress.
+                            <br>
+                            Coding Enthusiast: Proficient in C and Java, I love diving into the world of programming to solve complex problems and bring ideas to life.
+                            <br>
+                            Continuous Learner: I'm always eager to learn and stay updated with the latest design trends and programming techniques to deliver top-notch solutions.
+                            <br>
+                            Collaborative Team Player: I thrive in collaborative environments and enjoy working with cross-functional teams to deliver innovative projects.
+                            <br>
+                            Let's Connect: If you're looking for a passionate designer and developer to join your team or collaborate on a project, let's connect!</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Skilled in crafting captivating visuals and building intuitive websites, eager to contribute creative solutions to projects.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">UX/UI</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work4.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="/assets/img/figma-project-1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="/assets/img/figma-project-2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="/assets/img/figma-project-3.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="/assets/img/p4.png" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="/assets/img/project-2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="/assets/img/project-5.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <button onclick="window.location.href='mailto:snehalsal20@gmail.com'" class="contact__button button">Send Email</button>
+
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">By Snehal</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            <p class="footer__copy">&#169; 2024 - I revel in crafting and showcasing exquisite designs. All rigths reserved</p>
+        </footer>
 
-    <footer>
-      <div class="container">
-        <p>&copy; 2023 Snehal Salve</p>
-      </div>
-    </footer>
-    <!-- Scroll Reveal CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
