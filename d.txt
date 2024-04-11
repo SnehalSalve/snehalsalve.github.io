@@ -1,0 +1,22 @@
+ <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <div class="contact-content">
+          <div class="qr-code">
+            <!-- You can generate a QR code for your email using an online QR code generator -->
+            <img src="images/qr-code.jpg" alt="QR Code" />
+          </div>
+          <div class="separator"></div>
+          <div class="contact-details">
+            <p>
+              If you'd like to get in touch or have any inquiries, please don't
+              hesitate to reach out via email.
+            </p>
+            <!-- Send Email Button as a hyperlink -->
+            <div class="send-email">
+              <a href="mailto:snehalsal20@gmail.com">Send Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
