@@ -14,6 +14,7 @@ Skills: Overview of my technical skills and expertise.
 About Me: Brief introduction to who I am and what I do.
 Contact: Information on how to get in touch with me.
 ## Screenshots :
+![homePage](https://github.com/SnehalSalve/snehalsalve.github.io/assets/69302530/0831987e-f96f-4597-8db6-12c717dea0fd)
 
 ## Getting Started
 
